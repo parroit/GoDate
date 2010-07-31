@@ -1,0 +1,23 @@
+A Go package for using dates and times.
+
+Provides types DateTime and TimeSpan, modeled 
+on objects founds on dot.net.
+
+Types derives from uint64 and int64, so
+you can do common arithmetic operations with them.
+
+Example:
+
+d1:=NewDate(2008,12,25)
+
+d2:=NewDate(2009,12,25)
+
+if d1<d2 {
+   //do something
+}
+
+
+if d1==d2+DateTime(FromDays(365)) {
+   //do something
+}
+
